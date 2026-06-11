@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>단호한 문구</title>
+    <title>단호박 문구</title>
     <style>
         body {
             text-align: center;
@@ -13,18 +13,17 @@
     </style>
 </head>
 <body>
-    <p id="message">🎃 단호, 단호, 단호박에게 물어봐. 단호하게 답해줄게. 🎃</p>
+    <p id="message">🎃단호박에게 물어봐</p>
     <button onclick="showRandomMessage()">눌러서 확인하기</button>
 
     <script>
         function showRandomMessage() {
             const messages = [
-                "좋아 해보자.",
-                "절대 안돼",
-                "좋은 생각이야",
-                "네 마음이 먼저야.",
-                "원칙대로 해.",
-                "눈치보지마."
+                "기다려.",
+                "안 돼!",
+                "네 생각을 믿어.",
+                "좋은 생각이야!",
+                "다시 생각해."
             ];
             document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
         }
